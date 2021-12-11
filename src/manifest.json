@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extName__",
+  "description": "装饰你的Github个人主页",
+  "default_locale": "zh_CN",
+  "permissions": ["tabs", "activeTab", "<all_urls>", "*://*/*"],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["js/content-script.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  }
+}

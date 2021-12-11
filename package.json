@@ -1,0 +1,27 @@
+{
+  "name": "github-decorator",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service build --mode development --watch",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.1",
+    "vue": "^2.6.11",
+    "vue-ls": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-browser-extension": "latest",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
